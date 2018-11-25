@@ -5,7 +5,7 @@ module.exports = {
     entry: ['babel-polyfill','./src/index.js'],
 
     output: {
-        filename: 'bundle.js',
+        filename: '[name].[chunkHash:8].js',
         path: path.resolve(__dirname, '../html')
     },
     module:{
@@ -42,8 +42,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: '思学行教育',
-            template: path.resolve(__dirname,'../public/index.html')
+            title: 'init',
+            template: path.resolve(__dirname,'../index.html')
         })
     ]
 };

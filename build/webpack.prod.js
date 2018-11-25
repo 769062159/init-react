@@ -44,6 +44,6 @@ module.exports = merge(baseConfig, {
     },
     plugins:[
         new UglifyJsPlugin(),
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("[name].[chunkHash:8].css")
     ]
 });
