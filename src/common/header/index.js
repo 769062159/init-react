@@ -21,9 +21,6 @@ class Header extends Component{
     }
 }
 
-const mapStateToProps=(state)=>({
-    menuList:state.header.menuLeftList,
-    menuLeftShow:state.header.menuLeftShow
-})
 
-export default withRouter(connect(mapStateToProps,null)(Header))
+
+export default Header
